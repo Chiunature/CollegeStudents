@@ -1,268 +1,596 @@
 <!DOCTYPE html>
 <html lang="zh">
-	<head>
-		<meta charset="UTF-8" />
-		<title>宠物优享</title>
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/header.css" />
-		<link rel="stylesheet" href="css/banner.css" />
-		<link rel="stylesheet" href="css/coreServices.css" />
-		<link rel="stylesheet" href="css/hotActivities.css" />
-		<script src="js/banner.js" defer></script>
-	</head>
-	<body>
-		<!-- 头部导航栏 -->
-		<header class="header">
-			<div class="container">
-				<div class="container-left">
-					<div class="logo">
-						<img src="images/logo.svg" alt="宠物优享 Logo" />
-						<span class="logo-text">宠伴优享</span>
-					</div>
-					<nav class="nav">
-						<ul>
-							<li><a href="#">首页</a></li>
-							<li><a href="#">社区</a></li>
-							<li><a href="#">商城</a></li>
-							<li><a href="#">服务</a></li>
-							<li><a href="#">我的</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="container-right">
-					<div class="login-btn">
-						<a href="#">登录 / 注册</a>
-					</div>
-				</div>
-			</div>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>宠物优享</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/coreServices.css" />
+    <link rel="stylesheet" href="css/hotActivities.css" />
+    <link rel="stylesheet" href="css/featuredProducts.css" />
+    <script src="js/banner.js" defer></script>
+  </head>
+  <body>
+    <!-- 头部导航栏 -->
+    <header class="header">
+      <div class="container">
+        <div class="container-left">
+          <div class="logo">
+            <img src="images/logo.svg" alt="宠物优享 Logo" />
+            <span class="logo-text">宠伴优享</span>
+          </div>
+          <nav class="nav">
+            <ul>
+              <li><a href="#">首页</a></li>
+              <li><a href="#">社区</a></li>
+              <li><a href="#">商城</a></li>
+              <li><a href="#">服务</a></li>
+              <li><a href="#">我的</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="container-right">
+          <div class="login-btn">
+            <a href="#">登录 / 注册</a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-		<!-- 首屏轮播图 -->
-		<section class="hero-banner">
-			<img src="images/carousel1.jpg" alt="首屏图片" class="slide active" />
-			<img src="images/carousel2.jpg" alt="首屏图片" class="slide" />
-			<img src="images/carousel3.jpg" alt="首屏图片" class="slide" />
-			<div class="slider-container">
-				<div class="overlay">
-					<h1>专业贴心服务 上门护理无忧</h1>
-					<p>认证服务人员上门提供洗澡、遛狗、喂养等服务，省心又放心。</p>
-					<button class="btn">预约服务</button>
-				</div>
-			</div>
-			<div class="dots">
-				<span class="dot active" data-index="0"></span>
-				<span class="dot" data-index="1"></span>
-				<span class="dot" data-index="2"></span>
-			</div>
-		</section>
+    <!-- 首屏轮播图 -->
+    <section class="hero-banner">
+      <img src="images/carousel1.jpg" alt="首屏图片" class="slide active" />
+      <img src="images/carousel2.jpg" alt="首屏图片" class="slide" />
+      <img src="images/carousel3.jpg" alt="首屏图片" class="slide" />
+      <div class="slider-container">
+        <div class="overlay">
+          <h1>专业贴心服务 上门护理无忧</h1>
+          <p>认证服务人员上门提供洗澡、遛狗、喂养等服务，省心又放心。</p>
+          <button class="btn">预约服务</button>
+        </div>
+      </div>
+      <div class="dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+    </section>
 
-		<!-- 核心服务模块 -->
-		<section class="core-services">
-			<div class="core-services-container">
-				<h2>我们的核心服务</h2>
-				<div class="services-grid">
-					<div class="service-item">
-						<div class="icon1">
-							<img src="images/serviceIcon1.svg" alt="宠物主社交圈" class="icon-img" />
-						</div>
-						<h3>宠物主社交圈</h3>
-						<p>分享生活点滴，结识同频合拍的宠物爱好者，共同探讨养宠经验。</p>
-						<a href="#" class="link">查看更多 →</a>
-					</div>
-					<div class="service-item">
-						<div class="icon2">
-							<img src="images/serviceIcon2.svg" alt="精选宠物商城" class="icon-img" />
-						</div>
-						<h3>精选宠物商城</h3>
-						<p>一站式购物体验，汇聚全球优质宠物品牌，正品保障，快速配送。</p>
-						<a href="#" class="link">浏览商品 →</a>
-					</div>
-					<div class="service-item">
-						<div class="icon3">
-							<img src="images/serviceIcon3.svg" alt="宠物主社交圈" class="icon-img" />
-						</div>
-						<h3>特色服务预约</h3>
-						<p>上门洗澡、代遛狗、宠物寄养等专业服务，让主人省心，安心又靠谱。</p>
-						<a href="#" class="link">预约服务 →</a>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- 核心服务模块 -->
+    <section class="core-services">
+      <div class="core-services-container">
+        <h2>我们的核心服务</h2>
+        <div class="services-grid">
+          <div class="service-item">
+            <div class="icon1">
+              <img
+                src="images/serviceIcon1.svg"
+                alt="宠物主社交圈"
+                class="icon-img"
+              />
+            </div>
+            <h3>宠物主社交圈</h3>
+            <p>分享生活点滴，结识同频合拍的宠物爱好者，共同探讨养宠经验。</p>
+            <a href="#" class="link">查看更多 →</a>
+          </div>
+          <div class="service-item">
+            <div class="icon2">
+              <img
+                src="images/serviceIcon2.svg"
+                alt="精选宠物商城"
+                class="icon-img"
+              />
+            </div>
+            <h3>精选宠物商城</h3>
+            <p>一站式购物体验，汇聚全球优质宠物品牌，正品保障，快速配送。</p>
+            <a href="#" class="link">浏览商品 →</a>
+          </div>
+          <div class="service-item">
+            <div class="icon3">
+              <img
+                src="images/serviceIcon3.svg"
+                alt="宠物主社交圈"
+                class="icon-img"
+              />
+            </div>
+            <h3>特色服务预约</h3>
+            <p>
+              上门洗澡、代遛狗、宠物寄养等专业服务，让主人省心，安心又靠谱。
+            </p>
+            <a href="#" class="link">预约服务 →</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- 热门动态模块 -->
-		<section class="hot-activities">
-			<div class="hot-activities-container">
-				<div class="hot-activities-header">
-					<h2>热门动态</h2>
-					<div class="view-more">
-						<a href="#">查看更多</a>
-					</div>
-				</div>
-				<div class="hot-activities-grid">
-					<div class="hot-activities-item">
-						<img src="images/post1.jpg" alt="动态图片" class="hot-activities-item-img" />
-						<div class="hot-activities-info">
-							<div class="hot-activities-user-info">
-								<img src="images/post-img-1.jpg" alt="用户头像" class="user-avatar" />
-								<span>美短小妹妹</span>
-							</div>
-							<p>今天带我家小宝贝去打针，它超级开心！看到打针的医生在主动打招呼～</p>
-							<div class="meta">
-								<img src="images/like.svg" class="meta-img" />
-								<span>156</span>
-								<img src="images/talk.svg" class="meta-img" />
-								<span>76</span>
-							</div>
-						</div>
-					</div>
+    <!-- 热门动态模块 -->
+    <section class="hot-activities">
+      <div class="hot-activities-container">
+        <div class="hot-activities-header">
+          <h2>热门动态</h2>
+          <div class="view-more">
+            <a href="#">查看更多</a>
+          </div>
+        </div>
+        <div class="hot-activities-grid">
+          <div class="hot-activities-item">
+            <div class="hot-activities-item-img-container">
+              <img
+                src="images/post1.jpg"
+                alt="动态图片"
+                class="hot-activities-item-img"
+              />
+            </div>
+            <div class="hot-activities-info">
+              <div class="hot-activities-user-info">
+                <div class="hot-activities-item-img-container">
+                  <img
+                    src="images/post-img-1.jpg"
+                    alt="用户头像"
+                    class="user-avatar"
+                  />
+                </div>
 
-					<div class="hot-activities-item">
-						<img src="images/post2.jpg" alt="动态图片" class="hot-activities-item-img" />
-						<div class="hot-activities-info">
-							<div class="hot-activities-user-info">
-								<img src="images/post-img-2.jpg" alt="用户头像" class="user-avatar" />
-								<span>美短小妹妹</span>
-							</div>
-							<p>今天带我家小宝贝去打针，它超级开心！看到打针的医生在主动打招呼～</p>
-							<div class="meta">
-								<img src="images/like.svg" class="meta-img" />
-								<span>156</span>
-								<img src="images/talk.svg" class="meta-img" />
-								<span>76</span>
-							</div>
-						</div>
-					</div>
+                <span>美短小妹妹</span>
+              </div>
+              <p>
+                今天带我家小宝贝去打针，它超级开心！看到打针的医生在主动打招呼～
+              </p>
+              <div class="meta">
+                <img src="images/like.svg" class="meta-img" />
+                <span>156</span>
+                <img src="images/talk.svg" class="meta-img" />
+                <span>76</span>
+              </div>
+            </div>
+          </div>
 
-					<div class="hot-activities-item">
-						<img src="images/post3.jpg" alt="动态图片" class="hot-activities-item-img" />
-						<div class="hot-activities-info">
-							<div class="hot-activities-user-info">
-								<img src="images/post-img-3.jpg" alt="用户头像" class="user-avatar" />
-								<span>美短小妹妹</span>
-							</div>
-							<p>今天带我家小宝贝去打针，它超级开心！看到打针的医生在主动打招呼～</p>
-							<div class="meta">
-								<img src="images/like.svg" class="meta-img" />
-								<span>156</span>
-								<img src="images/talk.svg" class="meta-img" />
-								<span>76</span>
-							</div>
-						</div>
-					</div>
+          <div class="hot-activities-item">
+            <div class="hot-activities-item-img-container">
+              <img
+                src="images/post2.jpg"
+                alt="动态图片"
+                class="hot-activities-item-img"
+              />
+            </div>
+            <div class="hot-activities-info">
+              <div class="hot-activities-user-info">
+                <img
+                  src="images/post-img-2.jpg"
+                  alt="用户头像"
+                  class="user-avatar"
+                />
+                <span>美短小妹妹</span>
+              </div>
+              <p>
+                今天带我家小宝贝去打针，它超级开心！看到打针的医生在主动打招呼～
+              </p>
+              <div class="meta">
+                <img src="images/like.svg" class="meta-img" />
+                <span>156</span>
+                <img src="images/talk.svg" class="meta-img" />
+                <span>76</span>
+              </div>
+            </div>
+          </div>
 
-					<div class="hot-activities-item">
-						<img src="images/post4.jpg" alt="动态图片" class="hot-activities-item-img" />
-						<div class="hot-activities-info">
-							<div class="hot-activities-user-info">
-								<img src="images/post-img-4.jpg" alt="用户头像" class="user-avatar" />
-								<span>美短小妹妹</span>
-							</div>
-							<p>今天带我家小宝贝去打针，它超级开心！看到打针的医生在主动打招呼～</p>
-							<div class="meta">
-								<img src="images/like.svg" class="meta-img" />
-								<span>156</span>
-								<img src="images/talk.svg" class="meta-img" />
-								<span>76</span>
-							</div>
-						</div>
-					</div>
+          <div class="hot-activities-item">
+            <div class="hot-activities-item-img-container">
+              <img
+                src="images/post3.jpg"
+                alt="动态图片"
+                class="hot-activities-item-img"
+              />
+            </div>
+            <div class="hot-activities-info">
+              <div class="hot-activities-user-info">
+                <img
+                  src="images/post-img-3.jpg"
+                  alt="用户头像"
+                  class="user-avatar"
+                />
+                <span>美短小妹妹</span>
+              </div>
+              <p>
+                今天带我家小宝贝去打针，它超级开心！看到打针的医生在主动打招呼～
+              </p>
+              <div class="meta">
+                <img src="images/like.svg" class="meta-img" />
+                <span>156</span>
+                <img src="images/talk.svg" class="meta-img" />
+                <span>76</span>
+              </div>
+            </div>
+          </div>
 
-					<div class="hot-activities-item">
-						<img src="images/post5.jpg" alt="动态图片" class="hot-activities-item-img" />
-						<div class="hot-activities-info">
-							<div class="hot-activities-user-info">
-								<img src="images/post-img-5.jpg" alt="用户头像" class="user-avatar" />
-								<span>美短小妹妹</span>
-							</div>
-							<p>今天带我家小宝贝去打针，它超级开心！看到打针的医生在主动打招呼～</p>
-							<div class="meta">
-								<img src="images/like.svg" class="meta-img" />
-								<span>156</span>
-								<img src="images/talk.svg" class="meta-img" />
-								<span>76</span>
-							</div>
-						</div>
-					</div>
+          <div class="hot-activities-item">
+            <div class="hot-activities-item-img-container">
+              <img
+                src="images/post4.jpg"
+                alt="动态图片"
+                class="hot-activities-item-img"
+              />
+            </div>
+            <div class="hot-activities-info">
+              <div class="hot-activities-user-info">
+                <img
+                  src="images/post-img-4.jpg"
+                  alt="用户头像"
+                  class="user-avatar"
+                />
+                <span>美短小妹妹</span>
+              </div>
+              <p>
+                今天带我家小宝贝去打针，它超级开心！看到打针的医生在主动打招呼～
+              </p>
+              <div class="meta">
+                <img src="images/like.svg" class="meta-img" />
+                <span>156</span>
+                <img src="images/talk.svg" class="meta-img" />
+                <span>76</span>
+              </div>
+            </div>
+          </div>
 
-					<div class="hot-activities-item">
-						<img src="images/post6.jpg" alt="动态图片" class="hot-activities-item-img" />
-						<div class="hot-activities-info">
-							<div class="hot-activities-user-info">
-								<img src="images/post-img-6.jpg" alt="用户头像" class="user-avatar" />
-								<span>美短小妹妹</span>
-							</div>
-							<p>今天带我家小宝贝去打针，它超级开心！看到打针的医生在主动打招呼～</p>
-							<div class="meta">
-								<img src="images/like.svg" class="meta-img" />
-								<span>156</span>
-								<img src="images/talk.svg" class="meta-img" />
-								<span>76</span>
-							</div>
-						</div>
-					</div>
+          <div class="hot-activities-item">
+            <div class="hot-activities-item-img-container">
+              <img
+                src="images/post5.jpg"
+                alt="动态图片"
+                class="hot-activities-item-img"
+              />
+            </div>
+            <div class="hot-activities-info">
+              <div class="hot-activities-user-info">
+                <div class="hot-activities-item-img-container">
+                  <img
+                    src="images/post-img-5.jpg"
+                    alt="用户头像"
+                    class="user-avatar"
+                  />
+                </div>
+                <span>美短小妹妹</span>
+              </div>
+              <p>
+                今天带我家小宝贝去打针，它超级开心！看到打针的医生在主动打招呼～
+              </p>
+              <div class="meta">
+                <img src="images/like.svg" class="meta-img" />
+                <span>156</span>
+                <img src="images/talk.svg" class="meta-img" />
+                <span>76</span>
+              </div>
+            </div>
+          </div>
 
-					<div class="hot-activities-item">
-						<img src="images/post7.jpg" alt="动态图片" class="hot-activities-item-img" />
-						<div class="hot-activities-info">
-							<div class="hot-activities-user-info">
-								<img src="images/post-img-7.jpg" alt="用户头像" class="user-avatar" />
-								<span>美短小妹妹</span>
-							</div>
-							<p>今天带我家小宝贝去打针，它超级开心！看到打针的医生在主动打招呼～</p>
-							<div class="meta">
-								<img src="images/like.svg" class="meta-img" />
-								<span>156</span>
-								<img src="images/talk.svg" class="meta-img" />
-								<span>76</span>
-							</div>
-						</div>
-					</div>
+          <div class="hot-activities-item">
+            <div class="hot-activities-item-img-container">
+              <img
+                src="images/post6.jpg"
+                alt="动态图片"
+                class="hot-activities-item-img"
+              />
+            </div>
+            <div class="hot-activities-info">
+              <div class="hot-activities-user-info">
+                <img
+                  src="images/post-img-6.jpg"
+                  alt="用户头像"
+                  class="user-avatar"
+                />
+                <span>美短小妹妹</span>
+              </div>
+              <p>
+                今天带我家小宝贝去打针，它超级开心！看到打针的医生在主动打招呼～
+              </p>
+              <div class="meta">
+                <img src="images/like.svg" class="meta-img" />
+                <span>156</span>
+                <img src="images/talk.svg" class="meta-img" />
+                <span>76</span>
+              </div>
+            </div>
+          </div>
 
-					<div class="hot-activities-item">
-						<img src="images/post8.jpg" alt="动态图片" class="hot-activities-item-img" />
-						<div class="hot-activities-info">
-							<div class="hot-activities-user-info">
-								<img src="images/post-img-8.jpg" alt="用户头像" class="user-avatar" />
-								<span>美短小妹妹</span>
-							</div>
-							<p>今天带我家小宝贝去打针，它超级开心！看到打针的医生在主动打招呼～</p>
-							<div class="meta">
-								<img src="images/like.svg" class="meta-img" />
-								<span>156</span>
-								<img src="images/talk.svg" class="meta-img" />
-								<span>76</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+          <div class="hot-activities-item">
+            <div class="hot-activities-item-img-container">
+              <img
+                src="images/post7.jpg"
+                alt="动态图片"
+                class="hot-activities-item-img"
+              />
+            </div>
+            <div class="hot-activities-info">
+              <div class="hot-activities-user-info">
+                <img
+                  src="images/post-img-7.jpg"
+                  alt="用户头像"
+                  class="user-avatar"
+                />
+                <span>美短小妹妹</span>
+              </div>
+              <p>
+                今天带我家小宝贝去打针，它超级开心！看到打针的医生在主动打招呼～
+              </p>
+              <div class="meta">
+                <img src="images/like.svg" class="meta-img" />
+                <span>156</span>
+                <img src="images/talk.svg" class="meta-img" />
+                <span>76</span>
+              </div>
+            </div>
+          </div>
 
-		<!-- 精选商品模块 -->
-		<!-- <section class="featured-products">
-			<div class="container">
-				<h2>精选商品</h2>
-				<div class="product-tabs">
-					<button class="tab-btn active">精品推荐</button>
-					<button class="tab-btn">限时优惠</button>
-				</div>
-				<div class="products-grid">
-					<div class="product-item">
-						<img src="" alt="商品图片" />
-						<h4>天然有机狗粮 5kg装</h4>
-						<p>犬用增肥，蛋白 30%+，适合成年犬</p>
-						<div class="price">¥198.00</div>
-						<div class="original-price">¥218.00</div>
-					</div>
-				</div>
-				<div class="view-more">
-					<a href="#">查看更多</a>
-				</div>
-			</div>
-		</section> -->
+          <div class="hot-activities-item">
+            <div class="hot-activities-item-img-container">
+              <img
+                src="images/post8.jpg"
+                alt="动态图片"
+                class="hot-activities-item-img"
+              />
+            </div>
+            <div class="hot-activities-info">
+              <div class="hot-activities-user-info">
+                <img
+                  src="images/post-img-8.jpg"
+                  alt="用户头像"
+                  class="user-avatar"
+                />
+                <span>美短小妹妹</span>
+              </div>
+              <p>
+                今天带我家小宝贝去打针，它超级开心！看到打针的医生在主动打招呼～
+              </p>
+              <div class="meta">
+                <img src="images/like.svg" class="meta-img" />
+                <span>156</span>
+                <img src="images/talk.svg" class="meta-img" />
+                <span>76</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- 热门服务模块 -->
-		<!-- <section class="popular-services">
+    <!-- 精选商品模块 -->
+    <section class="featured-products">
+      <div class="featured-products-container">
+        <div class="featured-products-containers-header">
+          <h2>精选商品</h2>
+          <div class="featured-products-containers-header-view-more">
+            <a href="#">查看更多</a>
+          </div>
+        </div>
+
+        <div class="featured-products-main">
+          <!-- 精品推荐 -->
+          <div class="featured-products-grid">
+            <h3>精品推荐</h3>
+            <div class="product-list">
+              <!-- 产品1 -->
+              <div class="product-card">
+                <div class="product-card-img-container">
+                  <img src="images/good1.jpg" alt="天然有机狗粮" />
+                </div>
+
+                <div class="product-info">
+                  <h4>天然有机狗粮 5kg装</h4>
+                  <p>无谷物配方，富含 Omega-3</p>
+                  <div class="price">
+                    <strong>¥198.00</strong>
+                    <span>¥258.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 产品2 -->
+              <div class="product-card">
+                <div class="product-card-img-container">
+                  <img src="images/good2.jpg" alt="豪华多层猫爬架" />
+                </div>
+
+                <div class="product-info">
+                  <h4>豪华多层猫爬架</h4>
+                  <p>实木结构，稳固耐用</p>
+                  <div class="price">
+                    <strong>¥569.00</strong>
+                    <span>¥699.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 产品3 -->
+              <div class="product-card">
+                <div class="product-card-img-container">
+                  <img src="images/good3.jpg" alt="智能定时宠物喂食器" />
+                </div>
+
+                <div class="product-info">
+                  <h4>智能定时宠物喂食器</h4>
+                  <p>APP 控制，精准定量</p>
+                  <div class="price">
+                    <strong>¥329.00</strong>
+                    <span>¥399.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 产品4 -->
+              <div class="product-card">
+                <div class="product-card-img-container">
+                  <img src="images/good4.jpg" alt="智能宠物追踪器" />
+                </div>
+
+                <div class="product-info">
+                  <h4>智能宠物追踪器</h4>
+                  <p>GPS定位，安全防丢失</p>
+                  <div class="price">
+                    <strong>¥299.00</strong>
+                    <span>¥399.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 限时优惠 -->
+          <div class="limited-time-grid">
+            <h3>限时优惠</h3>
+            <div class="product-list">
+              <!-- 产品1 -->
+              <div class="card-drawer">
+                <div class="limited-time">
+                  <span class="badge">限时</span>
+                  <div class="limited-time-image">
+                    <img src="images/good-limit-1.jpg" alt="超值狗狗玩具套装" />
+                  </div>
+                  <div class="limited-time-info">
+                    <h4>超值狗狗玩具套装</h4>
+                    <p>耐咬材质，益智训练</p>
+                    <div class="limited-time-info-price">
+                      <strong>¥39.90</strong>
+                      <span>¥69.90</span>
+                    </div>
+                    <button class="limited-time-btn-buy">去抢购</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-drawer">
+                <div class="limited-time">
+                  <span class="badge">限时</span>
+                  <div class="limited-time-image">
+                    <img src="images/good-limit-1.jpg" alt="超值狗狗玩具套装" />
+                  </div>
+                  <div class="limited-time-info">
+                    <h4>超值狗狗玩具套装</h4>
+                    <p>耐咬材质，益智训练</p>
+                    <div class="limited-time-info-price">
+                      <strong>¥39.90</strong>
+                      <span>¥69.90</span>
+                    </div>
+                    <button class="limited-time-btn-buy">去抢购</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-drawer">
+                <div class="limited-time">
+                  <span class="badge">限时</span>
+                  <div class="limited-time-image">
+                    <img src="images/good-limit-1.jpg" alt="超值狗狗玩具套装" />
+                  </div>
+                  <div class="limited-time-info">
+                    <h4>超值狗狗玩具套装</h4>
+                    <p>耐咬材质，益智训练</p>
+                    <div class="limited-time-info-price">
+                      <strong>¥39.90</strong>
+                      <span>¥69.90</span>
+                    </div>
+                    <button class="limited-time-btn-buy">去抢购</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-drawer">
+                <div class="limited-time">
+                  <span class="badge">限时</span>
+                  <div class="limited-time-image">
+                    <img src="images/good-limit-1.jpg" alt="超值狗狗玩具套装" />
+                  </div>
+                  <div class="limited-time-info">
+                    <h4>超值狗狗玩具套装</h4>
+                    <p>耐咬材质，益智训练</p>
+                    <div class="limited-time-info-price">
+                      <strong>¥39.90</strong>
+                      <span>¥69.90</span>
+                    </div>
+                    <button class="limited-time-btn-buy">去抢购</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-drawer">
+                <div class="limited-time">
+                  <span class="badge">限时</span>
+                  <div class="limited-time-image">
+                    <img src="images/good-limit-1.jpg" alt="超值狗狗玩具套装" />
+                  </div>
+                  <div class="limited-time-info">
+                    <h4>超值狗狗玩具套装</h4>
+                    <p>耐咬材质，益智训练</p>
+                    <div class="limited-time-info-price">
+                      <strong>¥39.90</strong>
+                      <span>¥69.90</span>
+                    </div>
+                    <button class="limited-time-btn-buy">去抢购</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-drawer">
+                <div class="limited-time">
+                  <span class="badge">限时</span>
+                  <div class="limited-time-image">
+                    <img src="images/good-limit-1.jpg" alt="超值狗狗玩具套装" />
+                  </div>
+                  <div class="limited-time-info">
+                    <h4>超值狗狗玩具套装</h4>
+                    <p>耐咬材质，益智训练</p>
+                    <div class="limited-time-info-price">
+                      <strong>¥39.90</strong>
+                      <span>¥69.90</span>
+                    </div>
+                    <button class="limited-time-btn-buy">去抢购</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-drawer">
+                <div class="limited-time">
+                  <span class="badge">限时</span>
+                  <div class="limited-time-image">
+                    <img src="images/good-limit-1.jpg" alt="超值狗狗玩具套装" />
+                  </div>
+                  <div class="limited-time-info">
+                    <h4>超值狗狗玩具套装</h4>
+                    <p>耐咬材质，益智训练</p>
+                    <div class="limited-time-info-price">
+                      <strong>¥39.90</strong>
+                      <span>¥69.90</span>
+                    </div>
+                    <button class="limited-time-btn-buy">去抢购</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-drawer">
+                <div class="limited-time">
+                  <span class="badge">限时</span>
+                  <div class="limited-time-image">
+                    <img src="images/good-limit-1.jpg" alt="超值狗狗玩具套装" />
+                  </div>
+                  <div class="limited-time-info">
+                    <h4>超值狗狗玩具套装</h4>
+                    <p>耐咬材质，益智训练</p>
+                    <div class="limited-time-info-price">
+                      <strong>¥39.90</strong>
+                      <span>¥69.90</span>
+                    </div>
+                    <button class="limited-time-btn-buy">去抢购</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 热门服务模块 -->
+    <section class="popular-services">
 			<div class="container">
 				<h2>热门服务</h2>
 				<div class="services-grid">
@@ -281,10 +609,10 @@
 					<a href="#">查看更多</a>
 				</div>
 			</div>
-		</section> -->
+		</section>
 
-		<!-- 合作伙伴与媒体报道 -->
-		<!-- <section class="partners-media">
+    <!-- 合作伙伴与媒体报道 -->
+    <!-- <section class="partners-media">
 			<div class="container">
 				<h2>合作伙伴与媒体报道</h2>
 				<div class="partners-logos">
@@ -304,8 +632,8 @@
 			</div>
 		</section> -->
 
-		<!-- 页脚 -->
-		<!-- <footer class="footer">
+    <!-- 页脚 -->
+    <!-- <footer class="footer">
 			<div class="container">
 				<div class="footer-cols">
 					<div class="col">
@@ -358,5 +686,5 @@
 				</div>
 			</div>
 		</footer> -->
-	</body>
+  </body>
 </html>
