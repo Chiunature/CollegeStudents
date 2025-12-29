@@ -100,3 +100,106 @@
   color: #647584;
   margin-bottom: 15px;
 }
+
+/* 平板尺寸适配 (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer-container {
+    width: 95%;
+    padding: 0 20px;
+  }
+
+  .footer-cols {
+    gap: 25px;
+  }
+
+  .footer-col h4 {
+    font-size: 0.95rem;
+  }
+
+  .footer-col p,
+  .footer-col ul {
+    font-size: 0.9rem;
+  }
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .footer-container {
+    width: 100%;
+    padding: 0 15px;
+    gap: 15px;
+  }
+
+  .footer-cols {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .footer-col {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .footer-col h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .footer-col p {
+    font-size: 0.875rem;
+  }
+
+  .footer-col ul {
+    font-size: 0.875rem;
+  }
+
+  .social-icons {
+    gap: 8px;
+  }
+
+  .social-icons-container {
+    width: 28px;
+    height: 28px;
+  }
+
+  .contact-us-li {
+    gap: 8px;
+  }
+
+  .contact-us-img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 0 10px;
+  }
+
+  .footer-cols {
+    gap: 15px;
+    padding: 15px 0;
+  }
+
+  .footer-col h4 {
+    font-size: 0.9rem;
+  }
+
+  .footer-col p,
+  .footer-col ul {
+    font-size: 0.8rem;
+  }
+
+  .copyright {
+    font-size: 0.7rem;
+  }
+}

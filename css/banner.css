@@ -81,3 +81,105 @@
 .dot.active {
   background-color: #ed734a;
 }
+
+/* 平板尺寸适配 (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-banner {
+    height: 500px;
+  }
+
+  .slider-container {
+    top: 22%;
+    left: 12%;
+    right: 12%;
+  }
+
+  .overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .overlay p {
+    width: 90%;
+    max-width: 500px;
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    width: 140px;
+    padding: 9px 18px;
+    font-size: 1.1rem;
+  }
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 400px;
+  }
+
+  .slider-container {
+    top: 20%;
+    left: 10%;
+    right: 10%;
+  }
+
+  .overlay {
+    gap: 12px;
+  }
+
+  .overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .overlay p {
+    width: 100%;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .btn {
+    width: 130px;
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+
+  .dots {
+    bottom: 15px;
+    gap: 8px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-banner {
+    height: 300px;
+  }
+
+  .slider-container {
+    top: 15%;
+    left: 5%;
+    right: 5%;
+  }
+
+  .overlay h1 {
+    font-size: 1.2rem;
+  }
+
+  .overlay p {
+    font-size: 0.875rem;
+  }
+
+  .btn {
+    width: 120px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .dots {
+    bottom: 10px;
+  }
+}

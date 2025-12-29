@@ -49,3 +49,116 @@
 .media-card p {
   font-size: 14px;
 }
+
+/* 平板尺寸适配 (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .partners-media-container {
+    width: 95%;
+    padding: 0 20px;
+  }
+
+  .partners-media-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .partners-logos {
+    gap: 15px;
+  }
+
+  .partners-logos img {
+    width: 90px;
+    height: 45px;
+  }
+
+  .media-cards {
+    gap: 12px;
+  }
+
+  .media-card {
+    padding: 12px;
+  }
+
+  .media-card h4 {
+    font-size: 1rem;
+  }
+
+  .media-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .partners-media-container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 15px auto;
+    gap: 15px;
+  }
+
+  .partners-media-container h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .partners-logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .partners-logos img {
+    width: 80px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .media-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .media-card {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .media-card h4 {
+    font-size: 1rem;
+  }
+
+  .media-card p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-media-container {
+    padding: 0 10px;
+  }
+
+  .partners-media-container h2 {
+    font-size: 1.25rem;
+  }
+
+  .partners-logos {
+    gap: 10px;
+  }
+
+  .partners-logos img {
+    width: 70px;
+    height: 35px;
+  }
+
+  .media-card {
+    padding: 10px;
+  }
+
+  .media-card h4 {
+    font-size: 0.9rem;
+  }
+
+  .media-card p {
+    font-size: 0.8rem;
+  }
+}

@@ -1,908 +1,836 @@
 <!DOCTYPE html>
 <html lang="zh">
-  <head>
-    <meta charset="UTF-8" />
-    <title>宠物优享</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/banner.css" />
-    <link rel="stylesheet" href="css/coreServices.css" />
-    <link rel="stylesheet" href="css/hotActivities.css" />
-    <link rel="stylesheet" href="css/featuredProducts.css" />
-    <link rel="stylesheet" href="css/popularServices.css" />
-    <link rel="stylesheet" href="css/partnersMedia.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <script src="js/banner.js" defer></script>
-	<script src="js/index.js" defer></script>
-  </head>
-  <body>
-    <!-- 头部导航栏 -->
-    <header class="header">
-      <div class="container">
-        <div class="container-left">
-          <div class="logo">
-            <img src="images/logo.svg" alt="宠物优享 Logo" />
-            <span class="logo-text">宠伴优享</span>
-          </div>
-          <nav class="nav">
-            <ul>
-              <li><a href="#">首页</a></li>
-              <li><a href="#">社区</a></li>
-              <li><a href="#">商城</a></li>
-              <li><a href="#">服务</a></li>
-              <li><a href="#">我的</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="container-right">
-          <div class="login-btn">
-            <a href="#">登录 / 注册</a>
-          </div>
-        </div>
-      </div>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>宠物优享</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/banner.css" />
+		<link rel="stylesheet" href="css/coreServices.css" />
+		<link rel="stylesheet" href="css/hotActivities.css" />
+		<link rel="stylesheet" href="css/featuredProducts.css" />
+		<link rel="stylesheet" href="css/popularServices.css" />
+		<link rel="stylesheet" href="css/partnersMedia.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<script src="js/banner.js" defer></script>
+		<script src="js/index.js" defer></script>
+	</head>
+	<body>
+		<!-- 头部导航栏 -->
+		<header class="header">
+			<div class="container">
+				<div class="container-left">
+					<div class="logo">
+						<img src="images/logo.svg" alt="宠物优享 Logo" />
+						<span class="logo-text">宠伴优享</span>
+					</div>
+					<nav class="nav">
+						<ul>
+							<li><a href="#">首页</a></li>
+							<li><a href="#">社区</a></li>
+							<li><a href="#">商城</a></li>
+							<li><a href="#">服务</a></li>
+							<li><a href="#">我的</a></li>
+						</ul>
+					</nav>
+					<button class="mobile-menu-toggle" aria-label="菜单">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				<div class="container-right">
+					<div class="login-btn">
+						<a href="#">登录 / 注册</a>
+					</div>
+				</div>
+			</div>
+			<nav class="mobile-nav">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">社区</a></li>
+					<li><a href="#">商城</a></li>
+					<li><a href="#">服务</a></li>
+					<li><a href="#">我的</a></li>
+				</ul>
+			</nav>
+		</header>
 
-    <!-- 首屏轮播图 -->
-    <section class="hero-banner">
-      <img src="images/carousel1.jpg" alt="首屏图片" class="slide active" />
-      <img src="images/carousel2.jpg" alt="首屏图片" class="slide" />
-      <img src="images/carousel3.jpg" alt="首屏图片" class="slide" />
-      <div class="slider-container">
-        <div class="overlay">
-          <h1>专业贴心服务 上门护理无忧</h1>
-          <p>认证服务人员上门提供洗澡、遛狗、喂养等服务，省心又放心。</p>
-          <button class="btn">预约服务</button>
-        </div>
-      </div>
-      <div class="dots">
-        <span class="dot active" data-index="0"></span>
-        <span class="dot" data-index="1"></span>
-        <span class="dot" data-index="2"></span>
-      </div>
-    </section>
+		<!-- 首屏轮播图 -->
+		<section class="hero-banner">
+			<img src="images/carousel1.jpg" alt="首屏图片" class="slide active" />
+			<img src="images/carousel2.jpg" alt="首屏图片" class="slide" />
+			<img src="images/carousel3.jpg" alt="首屏图片" class="slide" />
+			<div class="slider-container">
+				<div class="overlay">
+					<h1>专业贴心服务 上门护理无忧</h1>
+					<p>认证服务人员上门提供洗澡、遛狗、喂养等服务，省心又放心。</p>
+					<button class="btn">预约服务</button>
+				</div>
+			</div>
+			<div class="dots">
+				<span class="dot active" data-index="0"></span>
+				<span class="dot" data-index="1"></span>
+				<span class="dot" data-index="2"></span>
+			</div>
+		</section>
 
-    <!-- 核心服务模块 -->
-    <section class="core-services">
-      <div class="core-services-container">
-        <h2>我们的核心服务</h2>
-        <div class="services-grid">
-          <div class="service-item">
-            <div class="icon1">
-              <img
-                src="images/serviceIcon1.svg"
-                alt="宠物主社交圈"
-                class="icon-img"
-              />
-            </div>
-            <h3>宠物主社交圈</h3>
-            <p>分享生活点滴，结识同频合拍的宠物爱好者，共同探讨养宠经验。</p>
-            <a href="#" class="link">查看更多 →</a>
-          </div>
-          <div class="service-item">
-            <div class="icon2">
-              <img
-                src="images/serviceIcon2.svg"
-                alt="精选宠物商城"
-                class="icon-img"
-              />
-            </div>
-            <h3>精选宠物商城</h3>
-            <p>一站式购物体验，汇聚全球优质宠物品牌，正品保障，快速配送。</p>
-            <a href="#" class="link">浏览商品 →</a>
-          </div>
-          <div class="service-item">
-            <div class="icon3">
-              <img
-                src="images/serviceIcon3.svg"
-                alt="宠物主社交圈"
-                class="icon-img"
-              />
-            </div>
-            <h3>特色服务预约</h3>
-            <p>上门洗澡、代遛狗、宠物寄养等专业服务，认证人员，安心可靠。</p>
-            <a href="#" class="link">预约服务 →</a>
-          </div>
-        </div>
-      </div>
-    </section>
+		<!-- 核心服务模块 -->
+		<section class="core-services">
+			<div class="core-services-container">
+				<h2>我们的核心服务</h2>
+				<div class="services-grid">
+					<div class="service-item">
+						<div class="icon1">
+							<img src="images/serviceIcon1.svg" alt="宠物主社交圈" class="icon-img" />
+						</div>
+						<h3>宠物主社交圈</h3>
+						<p>分享生活点滴，结识同频合拍的宠物爱好者，共同探讨养宠经验。</p>
+						<a href="#" class="link">查看更多 →</a>
+					</div>
+					<div class="service-item">
+						<div class="icon2">
+							<img src="images/serviceIcon2.svg" alt="精选宠物商城" class="icon-img" />
+						</div>
+						<h3>精选宠物商城</h3>
+						<p>一站式购物体验，汇聚全球优质宠物品牌，正品保障，快速配送。</p>
+						<a href="#" class="link">浏览商品 →</a>
+					</div>
+					<div class="service-item">
+						<div class="icon3">
+							<img src="images/serviceIcon3.svg" alt="宠物主社交圈" class="icon-img" />
+						</div>
+						<h3>特色服务预约</h3>
+						<p>上门洗澡、代遛狗、宠物寄养等专业服务，认证人员，安心可靠。</p>
+						<a href="#" class="link">预约服务 →</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- 热门动态模块 -->
-    <section class="hot-activities">
-      <div class="hot-activities-container">
-        <div class="hot-activities-header">
-          <h2>热门动态</h2>
-          <div class="view-more">
-            <a href="#">查看更多</a>
-          </div>
-        </div>
-        <div class="hot-activities-grid">
-          <div class="hot-activities-item">
-            <div class="hot-activities-item-img-container">
-              <img
-                src="images/post1.jpg"
-                alt="动态图片"
-                class="hot-activities-item-img"
-              />
-            </div>
-            <div class="hot-activities-info">
-              <div class="hot-activities-user-info">
-                <div class="hot-activities-item-img-container">
-                  <img
-                    src="images/post-img-1.jpg"
-                    alt="用户头像"
-                    class="user-avatar"
-                  />
-                </div>
-                <span>爱宠小仙女</span>
-              </div>
-              <p>
-                今天带我家金毛去公园玩，它超级开心！看到别的狗狗还会主动打招呼呢~
-              </p>
-              <div class="meta">
-                <img src="images/like.svg" class="meta-img" />
-                <span>245</span>
-                <img src="images/talk.svg" class="meta-img" />
-                <span>36</span>
-              </div>
-            </div>
-          </div>
+		<!-- 热门动态模块 -->
+		<section class="hot-activities">
+			<div class="hot-activities-container">
+				<div class="hot-activities-header">
+					<h2>热门动态</h2>
+					<div class="view-more">
+						<a href="#">查看更多</a>
+					</div>
+				</div>
+				<div class="hot-activities-grid">
+					<div class="hot-activities-item">
+						<div class="hot-activities-item-img-container">
+							<img src="images/post1.jpg" alt="动态图片" class="hot-activities-item-img" />
+						</div>
+						<div class="hot-activities-info">
+							<div class="hot-activities-user-info">
+								<div class="hot-activities-item-img-container">
+									<img src="images/post-img-1.jpg" alt="用户头像" class="user-avatar" />
+								</div>
+								<span>爱宠小仙女</span>
+							</div>
+							<p>今天带我家金毛去公园玩，它超级开心！看到别的狗狗还会主动打招呼呢~</p>
+							<div class="meta">
+								<img src="images/like.svg" class="meta-img" />
+								<span>245</span>
+								<img src="images/talk.svg" class="meta-img" />
+								<span>36</span>
+							</div>
+						</div>
+					</div>
 
-          <div class="hot-activities-item">
-            <div class="hot-activities-item-img-container">
-              <img
-                src="images/post2.jpg"
-                alt="动态图片"
-                class="hot-activities-item-img"
-              />
-            </div>
-            <div class="hot-activities-info">
-              <div class="hot-activities-user-info">
-                <img
-                  src="images/post-img-2.jpg"
-                  alt="用户头像"
-                  class="user-avatar"
-                />
-                <span>猫咪控大叔</span>
-              </div>
-              <p>
-                我家波斯猫新买的猫窝，颜值太高了！它每天都赖在里面不愿意出来。
-              </p>
-              <div class="meta">
-                <img src="images/like.svg" class="meta-img" />
-                <span>189</span>
-                <img src="images/talk.svg" class="meta-img" />
-                <span>28</span>
-              </div>
-            </div>
-          </div>
+					<div class="hot-activities-item">
+						<div class="hot-activities-item-img-container">
+							<img src="images/post2.jpg" alt="动态图片" class="hot-activities-item-img" />
+						</div>
+						<div class="hot-activities-info">
+							<div class="hot-activities-user-info">
+								<img src="images/post-img-2.jpg" alt="用户头像" class="user-avatar" />
+								<span>猫咪控大叔</span>
+							</div>
+							<p>我家波斯猫新买的猫窝，颜值太高了！它每天都赖在里面不愿意出来。</p>
+							<div class="meta">
+								<img src="images/like.svg" class="meta-img" />
+								<span>189</span>
+								<img src="images/talk.svg" class="meta-img" />
+								<span>28</span>
+							</div>
+						</div>
+					</div>
 
-          <div class="hot-activities-item">
-            <div class="hot-activities-item-img-container">
-              <img
-                src="images/post3.jpg"
-                alt="动态图片"
-                class="hot-activities-item-img"
-              />
-            </div>
-            <div class="hot-activities-info">
-              <div class="hot-activities-user-info">
-                <img
-                  src="images/post-img-3.jpg"
-                  alt="用户头像"
-                  class="user-avatar"
-                />
-                <span>兔子饲养员</span>
-              </div>
-              <p>
-                给兔兔准备了新鲜蔬菜大餐，看着它吃得津津有味的样子真是太治愈了！
-              </p>
-              <div class="meta">
-                <img src="images/like.svg" class="meta-img" />
-                <span>156</span>
-                <img src="images/talk.svg" class="meta-img" />
-                <span>22</span>
-              </div>
-            </div>
-          </div>
+					<div class="hot-activities-item">
+						<div class="hot-activities-item-img-container">
+							<img src="images/post3.jpg" alt="动态图片" class="hot-activities-item-img" />
+						</div>
+						<div class="hot-activities-info">
+							<div class="hot-activities-user-info">
+								<img src="images/post-img-3.jpg" alt="用户头像" class="user-avatar" />
+								<span>兔子饲养员</span>
+							</div>
+							<p>给兔兔准备了新鲜蔬菜大餐，看着它吃得津津有味的样子真是太治愈了！</p>
+							<div class="meta">
+								<img src="images/like.svg" class="meta-img" />
+								<span>156</span>
+								<img src="images/talk.svg" class="meta-img" />
+								<span>22</span>
+							</div>
+						</div>
+					</div>
 
-          <div class="hot-activities-item">
-            <div class="hot-activities-item-img-container">
-              <img
-                src="images/post4.jpg"
-                alt="动态图片"
-                class="hot-activities-item-img"
-              />
-            </div>
-            <div class="hot-activities-info">
-              <div class="hot-activities-user-info">
-                <img
-                  src="images/post-img-4.jpg"
-                  alt="用户头像"
-                  class="user-avatar"
-                />
-                <span>鸟语花香</span>
-              </div>
-              <p>
-                我家鹦鹉学会一句新话：“早上好！”每天被它的声音叫醒心情都特别好。
-              </p>
-              <div class="meta">
-                <img src="images/like.svg" class="meta-img" />
-                <span>98</span>
-                <img src="images/talk.svg" class="meta-img" />
-                <span>15</span>
-              </div>
-            </div>
-          </div>
+					<div class="hot-activities-item">
+						<div class="hot-activities-item-img-container">
+							<img src="images/post4.jpg" alt="动态图片" class="hot-activities-item-img" />
+						</div>
+						<div class="hot-activities-info">
+							<div class="hot-activities-user-info">
+								<img src="images/post-img-4.jpg" alt="用户头像" class="user-avatar" />
+								<span>鸟语花香</span>
+							</div>
+							<p>我家鹦鹉学会一句新话：“早上好！”每天被它的声音叫醒心情都特别好。</p>
+							<div class="meta">
+								<img src="images/like.svg" class="meta-img" />
+								<span>98</span>
+								<img src="images/talk.svg" class="meta-img" />
+								<span>15</span>
+							</div>
+						</div>
+					</div>
 
-          <div class="hot-activities-item">
-            <div class="hot-activities-item-img-container">
-              <img
-                src="images/post5.jpg"
-                alt="动态图片"
-                class="hot-activities-item-img"
-              />
-            </div>
-            <div class="hot-activities-info">
-              <div class="hot-activities-user-info">
-                <div class="hot-activities-item-img-container">
-                  <img
-                    src="images/post-img-5.jpg"
-                    alt="用户头像"
-                    class="user-avatar"
-                  />
-                </div>
-                <span>铲屎官日记</span>
-              </div>
-              <p>我家小奶猫太调皮了，一根羽毛都能玩半天，真是个小活宝！</p>
-              <div class="meta">
-                <img src="images/like.svg" class="meta-img" />
-                <span>312</span>
-                <img src="images/talk.svg" class="meta-img" />
-                <span>42</span>
-              </div>
-            </div>
-          </div>
+					<div class="hot-activities-item">
+						<div class="hot-activities-item-img-container">
+							<img src="images/post5.jpg" alt="动态图片" class="hot-activities-item-img" />
+						</div>
+						<div class="hot-activities-info">
+							<div class="hot-activities-user-info">
+								<div class="hot-activities-item-img-container">
+									<img src="images/post-img-5.jpg" alt="用户头像" class="user-avatar" />
+								</div>
+								<span>铲屎官日记</span>
+							</div>
+							<p>我家小奶猫太调皮了，一根羽毛都能玩半天，真是个小活宝！</p>
+							<div class="meta">
+								<img src="images/like.svg" class="meta-img" />
+								<span>312</span>
+								<img src="images/talk.svg" class="meta-img" />
+								<span>42</span>
+							</div>
+						</div>
+					</div>
 
-          <div class="hot-activities-item">
-            <div class="hot-activities-item-img-container">
-              <img
-                src="images/post6.jpg"
-                alt="动态图片"
-                class="hot-activities-item-img"
-              />
-            </div>
-            <div class="hot-activities-info">
-              <div class="hot-activities-user-info">
-                <img
-                  src="images/post-img-6.jpg"
-                  alt="用户头像"
-                  class="user-avatar"
-                />
-                <span>柴犬妈妈</span>
-              </div>
-              <p>秋天和我家柴犬一起散步，它总是那么优雅从容，像个小绅士。</p>
-              <div class="meta">
-                <img src="images/like.svg" class="meta-img" />
-                <span>178</span>
-                <img src="images/talk.svg" class="meta-img" />
-                <span>25</span>
-              </div>
-            </div>
-          </div>
+					<div class="hot-activities-item">
+						<div class="hot-activities-item-img-container">
+							<img src="images/post6.jpg" alt="动态图片" class="hot-activities-item-img" />
+						</div>
+						<div class="hot-activities-info">
+							<div class="hot-activities-user-info">
+								<img src="images/post-img-6.jpg" alt="用户头像" class="user-avatar" />
+								<span>柴犬妈妈</span>
+							</div>
+							<p>秋天和我家柴犬一起散步，它总是那么优雅从容，像个小绅士。</p>
+							<div class="meta">
+								<img src="images/like.svg" class="meta-img" />
+								<span>178</span>
+								<img src="images/talk.svg" class="meta-img" />
+								<span>25</span>
+							</div>
+						</div>
+					</div>
 
-          <div class="hot-activities-item">
-            <div class="hot-activities-item-img-container">
-              <img
-                src="images/post7.jpg"
-                alt="动态图片"
-                class="hot-activities-item-img"
-              />
-            </div>
-            <div class="hot-activities-info">
-              <div class="hot-activities-user-info">
-                <img
-                  src="images/post-img-7.jpg"
-                  alt="用户头像"
-                  class="user-avatar"
-                />
-                <span>豚鼠乐园</span>
-              </div>
-              <p>给豚鼠洗了澡。看它玩水的样子太可爱了，根部停不下来！</p>
-              <div class="meta">
-                <img src="images/like.svg" class="meta-img" />
-                <span>204</span>
-                <img src="images/talk.svg" class="meta-img" />
-                <span>31</span>
-              </div>
-            </div>
-          </div>
+					<div class="hot-activities-item">
+						<div class="hot-activities-item-img-container">
+							<img src="images/post7.jpg" alt="动态图片" class="hot-activities-item-img" />
+						</div>
+						<div class="hot-activities-info">
+							<div class="hot-activities-user-info">
+								<img src="images/post-img-7.jpg" alt="用户头像" class="user-avatar" />
+								<span>豚鼠乐园</span>
+							</div>
+							<p>给豚鼠洗了澡。看它玩水的样子太可爱了，根部停不下来！</p>
+							<div class="meta">
+								<img src="images/like.svg" class="meta-img" />
+								<span>204</span>
+								<img src="images/talk.svg" class="meta-img" />
+								<span>31</span>
+							</div>
+						</div>
+					</div>
 
-          <div class="hot-activities-item">
-            <div class="hot-activities-item-img-container">
-              <img
-                src="images/post8.jpg"
-                alt="动态图片"
-                class="hot-activities-item-img"
-              />
-            </div>
-            <div class="hot-activities-info">
-              <div class="hot-activities-user-info">
-                <img
-                  src="images/post-img-8.jpg"
-                  alt="用户头像"
-                  class="user-avatar"
-                />
-                <span>鸟奶奶</span>
-              </div>
-              <p>教了好久，我家玄凤鹦鹉终于愿意站我手指上了，成就感满满！</p>
-              <div class="meta">
-                <img src="images/like.svg" class="meta-img" />
-                <span>132</span>
-                <img src="images/talk.svg" class="meta-img" />
-                <span>18</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+					<div class="hot-activities-item">
+						<div class="hot-activities-item-img-container">
+							<img src="images/post8.jpg" alt="动态图片" class="hot-activities-item-img" />
+						</div>
+						<div class="hot-activities-info">
+							<div class="hot-activities-user-info">
+								<img src="images/post-img-8.jpg" alt="用户头像" class="user-avatar" />
+								<span>鸟奶奶</span>
+							</div>
+							<p>教了好久，我家玄凤鹦鹉终于愿意站我手指上了，成就感满满！</p>
+							<div class="meta">
+								<img src="images/like.svg" class="meta-img" />
+								<span>132</span>
+								<img src="images/talk.svg" class="meta-img" />
+								<span>18</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- 精选商品模块 -->
-    <section class="featured-products">
-      <div class="featured-products-container">
-        <div class="featured-products-containers-header">
-          <h2>精选商品</h2>
-          <div class="featured-products-containers-header-view-more">
-            <a href="#">查看更多</a>
-          </div>
-        </div>
+		<!-- 精选商品模块 -->
+		<section class="featured-products">
+			<div class="featured-products-container">
+				<div class="featured-products-containers-header">
+					<h2>精选商品</h2>
+					<div class="featured-products-containers-header-view-more">
+						<a href="#">查看更多</a>
+					</div>
+				</div>
 
-        <div class="featured-products-main">
-          <!-- 精品推荐 -->
-          <div class="featured-products-grid">
-            <h3>精品推荐</h3>
-            <div class="product-list">
-              <!-- 产品1 -->
-              <div class="product-card">
-                <div class="product-card-img-container">
-                  <img src="images/good1.jpg" alt="天然有机狗粮" />
-                </div>
+				<div class="featured-products-main">
+					<!-- 精品推荐 -->
+					<div class="featured-products-grid">
+						<h3>精品推荐</h3>
+						<div class="product-list">
+							<!-- 产品1 -->
+							<div class="product-card">
+								<div class="product-card-img-container">
+									<img src="images/good1.jpg" alt="天然有机狗粮" />
+								</div>
 
-                <div class="product-info">
-                  <h4>天然有机狗粮 5kg装</h4>
-                  <p>无谷物配方，富含 Omega-3</p>
-                  <div class="price">
-                    <strong>¥198.00</strong>
-                    <span>¥258.00</span>
-                  </div>
-                </div>
-              </div>
+								<div class="product-info">
+									<h4>天然有机狗粮 5kg装</h4>
+									<p>无谷物配方，富含 Omega-3</p>
+									<div class="price">
+										<strong>¥198.00</strong>
+										<span>¥258.00</span>
+									</div>
+								</div>
+							</div>
 
-              <!-- 产品2 -->
-              <div class="product-card">
-                <div class="product-card-img-container">
-                  <img src="images/good2.jpg" alt="豪华多层猫爬架" />
-                </div>
+							<!-- 产品2 -->
+							<div class="product-card">
+								<div class="product-card-img-container">
+									<img src="images/good2.jpg" alt="豪华多层猫爬架" />
+								</div>
 
-                <div class="product-info">
-                  <h4>豪华多层猫爬架</h4>
-                  <p>实木结构，稳固耐用</p>
-                  <div class="price">
-                    <strong>¥569.00</strong>
-                    <span>¥699.00</span>
-                  </div>
-                </div>
-              </div>
+								<div class="product-info">
+									<h4>豪华多层猫爬架</h4>
+									<p>实木结构，稳固耐用</p>
+									<div class="price">
+										<strong>¥569.00</strong>
+										<span>¥699.00</span>
+									</div>
+								</div>
+							</div>
 
-              <!-- 产品3 -->
-              <div class="product-card">
-                <div class="product-card-img-container">
-                  <img src="images/good3.jpg" alt="智能定时宠物喂食器" />
-                </div>
+							<!-- 产品3 -->
+							<div class="product-card">
+								<div class="product-card-img-container">
+									<img src="images/good3.jpg" alt="智能定时宠物喂食器" />
+								</div>
 
-                <div class="product-info">
-                  <h4>智能定时宠物喂食器</h4>
-                  <p>APP 控制，精准定量</p>
-                  <div class="price">
-                    <strong>¥329.00</strong>
-                    <span>¥399.00</span>
-                  </div>
-                </div>
-              </div>
+								<div class="product-info">
+									<h4>智能定时宠物喂食器</h4>
+									<p>APP 控制，精准定量</p>
+									<div class="price">
+										<strong>¥329.00</strong>
+										<span>¥399.00</span>
+									</div>
+								</div>
+							</div>
 
-              <!-- 产品4 -->
-              <div class="product-card">
-                <div class="product-card-img-container">
-                  <img src="images/good4.jpg" alt="智能宠物追踪器" />
-                </div>
+							<!-- 产品4 -->
+							<div class="product-card">
+								<div class="product-card-img-container">
+									<img src="images/good4.jpg" alt="智能宠物追踪器" />
+								</div>
 
-                <div class="product-info">
-                  <h4>智能宠物追踪器</h4>
-                  <p>GPS定位，安全防丢失</p>
-                  <div class="price">
-                    <strong>¥299.00</strong>
-                    <span>¥399.00</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+								<div class="product-info">
+									<h4>智能宠物追踪器</h4>
+									<p>GPS定位，安全防丢失</p>
+									<div class="price">
+										<strong>¥299.00</strong>
+										<span>¥399.00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-          <!-- 限时优惠 -->
-          <div class="limited-time-grid">
-            <h3>限时优惠</h3>
-            <div class="product-list">
-              <!-- 产品1 -->
-              <div class="card-drawer">
-                <div class="limited-time">
-                  <span class="badge">限时</span>
-                  <div class="limited-time-image">
-                    <img src="images/good-limit-1.jpg" alt="超值狗狗玩具套装" />
-                  </div>
-                  <div class="limited-time-info">
-                    <h4>超值狗狗玩具套装</h4>
-                    <p>耐咬材质，益智训练</p>
-                    <div class="limited-time-info-price">
-                      <strong>¥39.90</strong>
-                      <span>¥69.90</span>
-                    </div>
-                    <button class="limited-time-btn-buy">去抢购</button>
-                  </div>
-                </div>
-              </div>
+					<!-- 限时优惠 -->
+					<div class="limited-time-grid">
+						<h3>限时优惠</h3>
+						<div class="product-list">
+							<!-- 产品1 -->
+							<div class="card-drawer">
+								<div class="limited-time">
+									<span class="badge">限时</span>
+									<div class="limited-time-image">
+										<img src="images/good-limit-1.jpg" alt="超值狗狗玩具套装" />
+									</div>
+									<div class="limited-time-info">
+										<h4>超值狗狗玩具套装</h4>
+										<p>耐咬材质，益智训练</p>
+										<div class="limited-time-info-price">
+											<strong>¥39.90</strong>
+											<span>¥69.90</span>
+										</div>
+										<button class="limited-time-btn-buy">去抢购</button>
+									</div>
+								</div>
+							</div>
 
-              <div class="card-drawer">
-                <div class="limited-time">
-                  <div class="limited-time-image">
-                    <img src="images/good-limit-2.jpg" alt="环保猫砂" />
-                  </div>
-                  <div class="limited-time-info">
-                    <h4>环保猫砂 10L装</h4>
-                    <p>结团快，除臭佳</p>
-                    <div class="limited-time-info-price">
-                      <strong>¥29.90</strong>
-                      <span>¥49.90</span>
-                    </div>
-                    <button class="limited-time-btn-buy">去抢购</button>
-                  </div>
-                </div>
-              </div>
+							<div class="card-drawer">
+								<div class="limited-time">
+									<div class="limited-time-image">
+										<img src="images/good-limit-2.jpg" alt="环保猫砂" />
+									</div>
+									<div class="limited-time-info">
+										<h4>环保猫砂 10L装</h4>
+										<p>结团快，除臭佳</p>
+										<div class="limited-time-info-price">
+											<strong>¥29.90</strong>
+											<span>¥49.90</span>
+										</div>
+										<button class="limited-time-btn-buy">去抢购</button>
+									</div>
+								</div>
+							</div>
 
-              <div class="card-drawer">
-                <div class="limited-time">
-                  <div class="limited-time-image">
-                    <img src="images/good-limit-3.jpg" alt="宠物零食大礼包" />
-                  </div>
-                  <div class="limited-time-info">
-                    <h4>宠物零食大礼包</h4>
-                    <p>鸡肉鸭肉混合口味</p>
-                    <div class="limited-time-info-price">
-                      <strong>¥59.90</strong>
-                      <span>¥99.90</span>
-                    </div>
-                    <button class="limited-time-btn-buy">去抢购</button>
-                  </div>
-                </div>
-              </div>
+							<div class="card-drawer">
+								<div class="limited-time">
+									<div class="limited-time-image">
+										<img src="images/good-limit-3.jpg" alt="宠物零食大礼包" />
+									</div>
+									<div class="limited-time-info">
+										<h4>宠物零食大礼包</h4>
+										<p>鸡肉鸭肉混合口味</p>
+										<div class="limited-time-info-price">
+											<strong>¥59.90</strong>
+											<span>¥99.90</span>
+										</div>
+										<button class="limited-time-btn-buy">去抢购</button>
+									</div>
+								</div>
+							</div>
 
-              <div class="card-drawer">
-                <div class="limited-time">
-                  <span class="badge">限时</span>
-                  <div class="limited-time-image">
-                    <img src="images/good-limit-4.jpg" alt="四季通用宠物垫" />
-                  </div>
-                  <div class="limited-time-info">
-                    <h4>四季通用宠物垫</h4>
-                    <p>防水面料，易清洁</p>
-                    <div class="limited-time-info-price">
-                      <strong>¥89.90</strong>
-                      <span>¥129.00</span>
-                    </div>
-                    <button class="limited-time-btn-buy">去抢购</button>
-                  </div>
-                </div>
-              </div>
+							<div class="card-drawer">
+								<div class="limited-time">
+									<span class="badge">限时</span>
+									<div class="limited-time-image">
+										<img src="images/good-limit-4.jpg" alt="四季通用宠物垫" />
+									</div>
+									<div class="limited-time-info">
+										<h4>四季通用宠物垫</h4>
+										<p>防水面料，易清洁</p>
+										<div class="limited-time-info-price">
+											<strong>¥89.90</strong>
+											<span>¥129.00</span>
+										</div>
+										<button class="limited-time-btn-buy">去抢购</button>
+									</div>
+								</div>
+							</div>
 
-              <div class="card-drawer">
-                <div class="limited-time">
-                  <div class="limited-time-image">
-                    <img src="images/good-limit-5.jpg" alt="家用宠物梳毛套装" />
-                  </div>
-                  <div class="limited-time-info">
-                    <h4>家用宠物梳毛套装</h4>
-                    <p>防静电，减少掉毛</p>
-                    <div class="limited-time-info-price">
-                      <strong>¥45.00</strong>
-                      <span>¥68.00</span>
-                    </div>
-                    <button class="limited-time-btn-buy">去抢购</button>
-                  </div>
-                </div>
-              </div>
+							<div class="card-drawer">
+								<div class="limited-time">
+									<div class="limited-time-image">
+										<img src="images/good-limit-5.jpg" alt="家用宠物梳毛套装" />
+									</div>
+									<div class="limited-time-info">
+										<h4>家用宠物梳毛套装</h4>
+										<p>防静电，减少掉毛</p>
+										<div class="limited-time-info-price">
+											<strong>¥45.00</strong>
+											<span>¥68.00</span>
+										</div>
+										<button class="limited-time-btn-buy">去抢购</button>
+									</div>
+								</div>
+							</div>
 
-              <div class="card-drawer">
-                <div class="limited-time">
-                  <div class="limited-time-image">
-                    <img src="images/good-limit-6.jpg" alt="航空级宠物出行包" />
-                  </div>
-                  <div class="limited-time-info">
-                    <h4>航空级宠物出行包</h4>
-                    <p>透气网面，安全舒适</p>
-                    <div class="limited-time-info-price">
-                      <strong>¥139.00</strong>
-                      <span>¥199.00</span>
-                    </div>
-                    <button class="limited-time-btn-buy">去抢购</button>
-                  </div>
-                </div>
-              </div>
+							<div class="card-drawer">
+								<div class="limited-time">
+									<div class="limited-time-image">
+										<img src="images/good-limit-6.jpg" alt="航空级宠物出行包" />
+									</div>
+									<div class="limited-time-info">
+										<h4>航空级宠物出行包</h4>
+										<p>透气网面，安全舒适</p>
+										<div class="limited-time-info-price">
+											<strong>¥139.00</strong>
+											<span>¥199.00</span>
+										</div>
+										<button class="limited-time-btn-buy">去抢购</button>
+									</div>
+								</div>
+							</div>
 
-              <div class="card-drawer">
-                <div class="limited-time">
-                  <div class="limited-time-image">
-                    <img src="images/good-limit-7.jpg" alt="狗狗口腔护理套装" />
-                  </div>
-                  <div class="limited-time-info">
-                    <h4>狗狗口腔护理套装</h4>
-                    <p>预防牙结石，清新口气</p>
-                    <div class="limited-time-info-price">
-                      <strong>¥55.00</strong>
-                      <span>¥89.00</span>
-                    </div>
-                    <button class="limited-time-btn-buy">去抢购</button>
-                  </div>
-                </div>
-              </div>
+							<div class="card-drawer">
+								<div class="limited-time">
+									<div class="limited-time-image">
+										<img src="images/good-limit-7.jpg" alt="狗狗口腔护理套装" />
+									</div>
+									<div class="limited-time-info">
+										<h4>狗狗口腔护理套装</h4>
+										<p>预防牙结石，清新口气</p>
+										<div class="limited-time-info-price">
+											<strong>¥55.00</strong>
+											<span>¥89.00</span>
+										</div>
+										<button class="limited-time-btn-buy">去抢购</button>
+									</div>
+								</div>
+							</div>
 
-              <div class="card-drawer">
-                <div class="limited-time">
-                  <span class="badge">限时</span>
-                  <div class="limited-time-image">
-                    <img src="images/good-limit-8.jpg" alt="自动清理猫砂盘" />
-                  </div>
-                  <div class="limited-time-info">
-                    <h4>自动清理猫砂盘</h4>
-                    <p>智能感应，自动清理</p>
-                    <div class="limited-time-info-price">
-                      <strong>¥899.00</strong>
-                      <span>¥129.00</span>
-                    </div>
-                    <button class="limited-time-btn-buy">去抢购</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+							<div class="card-drawer">
+								<div class="limited-time">
+									<span class="badge">限时</span>
+									<div class="limited-time-image">
+										<img src="images/good-limit-8.jpg" alt="自动清理猫砂盘" />
+									</div>
+									<div class="limited-time-info">
+										<h4>自动清理猫砂盘</h4>
+										<p>智能感应，自动清理</p>
+										<div class="limited-time-info-price">
+											<strong>¥899.00</strong>
+											<span>¥129.00</span>
+										</div>
+										<button class="limited-time-btn-buy">去抢购</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- 热门服务模块 -->
-    <section class="popular-services">
-      <div class="popular-services-container">
-        <div class="popular-services-containers-header">
-          <h2>精选商品</h2>
-          <div class="popular-services-containers-header-view-more">
-            <a href="#">查看更多</a>
-          </div>
-        </div>
-        <div class="popular-services-flex">
-          <div class="popular-services-grid">
-            <h4>宠物寄养</h4>
-            <div class="popular-services-card">
-              <div class="popular-services-img-container">
-                <img src="images/service1.jpg" alt="服务图片" />
-              </div>
-              <div class="popular-services-description">
-                <div class="psd-1blue">
-                  <p>精致之家</p>
-                  <span>高级版</span>
-                </div>
+		<!-- 热门服务模块 -->
+		<section class="popular-services">
+			<div class="popular-services-container">
+				<div class="popular-services-containers-header">
+					<h2>精选商品</h2>
+					<div class="popular-services-containers-header-view-more">
+						<a href="#">查看更多</a>
+					</div>
+				</div>
+				<div class="popular-services-flex">
+					<div class="popular-services-grid">
+						<h4>宠物寄养</h4>
+						<div class="popular-services-card">
+							<div class="popular-services-img-container">
+								<img src="images/service1.jpg" alt="服务图片" />
+							</div>
+							<div class="popular-services-description">
+								<div class="psd-1blue">
+									<p>精致之家</p>
+									<span>高级版</span>
+								</div>
 
-                <p class="psd-p">5年经营</p>
-                <p class="psd-p">好评率 96%</p>
-              </div>
-              <div class="popular-services-price-container">
-                <div class="popular-services-price-container2">
-                  <div class="popular-services-price-container-logo">
-                    <img src="images/service1-1.svg" alt="" />
-                  </div>
-                  <div class="popular-services-price-container-description">
-                    <span class="pspcd-tittle">家庭式寄养</span>
-                    <span class="pspcd-effct">24小时看护</span>
-                    <div class="popular-services-price">¥88.00 起</div>
-                  </div>
-                </div>
+								<p class="psd-p">5年经营</p>
+								<p class="psd-p">好评率 96%</p>
+							</div>
+							<div class="popular-services-price-container">
+								<div class="popular-services-price-container2">
+									<div class="popular-services-price-container-logo">
+										<img src="images/service1-1.svg" alt="" />
+									</div>
+									<div class="popular-services-price-container-description">
+										<span class="pspcd-tittle">家庭式寄养</span>
+										<span class="pspcd-effct">24小时看护</span>
+										<div class="popular-services-price">¥88.00 起</div>
+									</div>
+								</div>
 
-                <div class="popular-services-price-container2">
-                  <div class="popular-services-price-container-logo">
-                    <img src="images/service1-2.svg" alt="" />
-                  </div>
-                  <div class="popular-services-price-container-description">
-                    <span class="pspcd-tittle">豪华套房寄养</span>
-                    <span class="pspcd-effct">独立空间</span>
-                    <div class="popular-services-price">¥168.00 起</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+								<div class="popular-services-price-container2">
+									<div class="popular-services-price-container-logo">
+										<img src="images/service1-2.svg" alt="" />
+									</div>
+									<div class="popular-services-price-container-description">
+										<span class="pspcd-tittle">豪华套房寄养</span>
+										<span class="pspcd-effct">独立空间</span>
+										<div class="popular-services-price">¥168.00 起</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-          <div class="popular-services-grid">
-            <h4>宠物美容</h4>
-            <div class="popular-services-card">
-              <div class="popular-services-img-container">
-                <img src="images/service2.jpg" alt="服务图片" />
-              </div>
-              <div class="popular-services-description">
-                <div class="psd-1blue">
-                  <p>王老师</p>
-                  <span>高级</span>
-                </div>
+					<div class="popular-services-grid">
+						<h4>宠物美容</h4>
+						<div class="popular-services-card">
+							<div class="popular-services-img-container">
+								<img src="images/service2.jpg" alt="服务图片" />
+							</div>
+							<div class="popular-services-description">
+								<div class="psd-1blue">
+									<p>王老师</p>
+									<span>高级</span>
+								</div>
 
-                <p class="psd-p">8年经营</p>
-                <p class="psd-p">好评率 99%</p>
-              </div>
-              <div class="popular-services-price-container">
-                <div class="popular-services-price-container2">
-                  <div class="popular-services-price-container-logo">
-                    <img src="images/service2-1.svg" alt="" />
-                  </div>
-                  <div class="popular-services-price-container-description">
-                    <span class="pspcd-tittle">精致造型修剪</span>
-                    <span class="pspcd-effct">专业美容师</span>
-                    <div class="popular-services-price">¥198.00 起</div>
-                  </div>
-                </div>
+								<p class="psd-p">8年经营</p>
+								<p class="psd-p">好评率 99%</p>
+							</div>
+							<div class="popular-services-price-container">
+								<div class="popular-services-price-container2">
+									<div class="popular-services-price-container-logo">
+										<img src="images/service2-1.svg" alt="" />
+									</div>
+									<div class="popular-services-price-container-description">
+										<span class="pspcd-tittle">精致造型修剪</span>
+										<span class="pspcd-effct">专业美容师</span>
+										<div class="popular-services-price">¥198.00 起</div>
+									</div>
+								</div>
 
-                <div class="popular-services-price-container2">
-                  <div class="popular-services-price-container-logo">
-                    <img src="images/service2-2.svg" alt="" />
-                  </div>
-                  <div class="popular-services-price-container-description">
-                    <span class="pspcd-tittle">基础清洁护理</span>
-                    <span class="pspcd-effct">洗澡吹干</span>
-                    <div class="popular-services-price">¥88.00 起</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+								<div class="popular-services-price-container2">
+									<div class="popular-services-price-container-logo">
+										<img src="images/service2-2.svg" alt="" />
+									</div>
+									<div class="popular-services-price-container-description">
+										<span class="pspcd-tittle">基础清洁护理</span>
+										<span class="pspcd-effct">洗澡吹干</span>
+										<div class="popular-services-price">¥88.00 起</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-          <div class="popular-services-grid">
-            <h4>宠物医疗</h4>
-            <div class="popular-services-card">
-              <div class="popular-services-img-container">
-                <img src="images/service1.jpg" alt="服务图片" />
-              </div>
-              <div class="popular-services-description">
-                <div class="psd-1green">
-                  <p>张医生</p>
-                  <span>专家</span>
-                </div>
+					<div class="popular-services-grid">
+						<h4>宠物医疗</h4>
+						<div class="popular-services-card">
+							<div class="popular-services-img-container">
+								<img src="images/service1.jpg" alt="服务图片" />
+							</div>
+							<div class="popular-services-description">
+								<div class="psd-1green">
+									<p>张医生</p>
+									<span>专家</span>
+								</div>
 
-                <p class="psd-p">15年经验</p>
-                <p class="psd-p">好评率 97%</p>
-              </div>
-              <div class="popular-services-price-container">
-                <div class="popular-services-price-container2">
-                  <div class="popular-services-price-container-logo">
-                    <img src="images/service3-1.svg" alt="" />
-                  </div>
-                  <div class="popular-services-price-container-description">
-                    <span class="pspcd-tittle">上门基础诊疗</span>
-                    <span class="pspcd-effct">常见病诊断</span>
-                    <div class="popular-services-price">¥299.00 起</div>
-                  </div>
-                </div>
+								<p class="psd-p">15年经验</p>
+								<p class="psd-p">好评率 97%</p>
+							</div>
+							<div class="popular-services-price-container">
+								<div class="popular-services-price-container2">
+									<div class="popular-services-price-container-logo">
+										<img src="images/service3-1.svg" alt="" />
+									</div>
+									<div class="popular-services-price-container-description">
+										<span class="pspcd-tittle">上门基础诊疗</span>
+										<span class="pspcd-effct">常见病诊断</span>
+										<div class="popular-services-price">¥299.00 起</div>
+									</div>
+								</div>
 
-                <div class="popular-services-price-container2">
-                  <div class="popular-services-price-container-logo">
-                    <img src="images/service3-2.svg" alt="" />
-                  </div>
-                  <div class="popular-services-price-container-description">
-                    <span class="pspcd-tittle">疫苗接种服务</span>
-                    <span class="pspcd-effct">正规渠道疫苗</span>
-                    <div class="popular-services-price">¥128.00 起</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+								<div class="popular-services-price-container2">
+									<div class="popular-services-price-container-logo">
+										<img src="images/service3-2.svg" alt="" />
+									</div>
+									<div class="popular-services-price-container-description">
+										<span class="pspcd-tittle">疫苗接种服务</span>
+										<span class="pspcd-effct">正规渠道疫苗</span>
+										<div class="popular-services-price">¥128.00 起</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-          <div class="popular-services-grid">
-            <h4>个人服务</h4>
-            <div class="popular-services-card">
-              <div class="popular-services-img-container">
-                <img src="images/service1.jpg" alt="服务图片" />
-              </div>
-              <div class="popular-services-description">
-                <div class="psd-1purple">
-                  <p>陈教练</p>
-                  <span>专家</span>
-                </div>
+					<div class="popular-services-grid">
+						<h4>个人服务</h4>
+						<div class="popular-services-card">
+							<div class="popular-services-img-container">
+								<img src="images/service1.jpg" alt="服务图片" />
+							</div>
+							<div class="popular-services-description">
+								<div class="psd-1purple">
+									<p>陈教练</p>
+									<span>专家</span>
+								</div>
 
-                <p class="psd-p">10年经验</p>
-                <p class="psd-p">好评率 96%</p>
-              </div>
-              <div class="popular-services-price-container">
-                <div class="popular-services-price-container2">
-                  <div class="popular-services-price-container-logo">
-                    <img src="images/service4-1.svg" alt="" />
-                  </div>
-                  <div class="popular-services-price-container-description">
-                    <span class="pspcd-tittle">行为矫正训练</span>
-                    <span class="pspcd-effct">纠正不良习惯</span>
-                    <div class="popular-services-price">¥399.00 起</div>
-                  </div>
-                </div>
+								<p class="psd-p">10年经验</p>
+								<p class="psd-p">好评率 96%</p>
+							</div>
+							<div class="popular-services-price-container">
+								<div class="popular-services-price-container2">
+									<div class="popular-services-price-container-logo">
+										<img src="images/service4-1.svg" alt="" />
+									</div>
+									<div class="popular-services-price-container-description">
+										<span class="pspcd-tittle">行为矫正训练</span>
+										<span class="pspcd-effct">纠正不良习惯</span>
+										<div class="popular-services-price">¥399.00 起</div>
+									</div>
+								</div>
 
-                <div class="popular-services-price-container2">
-                  <div class="popular-services-price-container-logo">
-                    <img src="images/service4-2.svg" alt="" />
-                  </div>
-                  <div class="popular-services-price-container-description">
-                    <span class="pspcd-tittle">幼犬社会化训练</span>
-                    <span class="pspcd-effct">培养良好性格</span>
-                    <div class="popular-services-price">¥299.00 起</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+								<div class="popular-services-price-container2">
+									<div class="popular-services-price-container-logo">
+										<img src="images/service4-2.svg" alt="" />
+									</div>
+									<div class="popular-services-price-container-description">
+										<span class="pspcd-tittle">幼犬社会化训练</span>
+										<span class="pspcd-effct">培养良好性格</span>
+										<div class="popular-services-price">¥299.00 起</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-          <div class="popular-services-grid">
-            <h4>其他服务</h4>
-            <div class="popular-services-card">
-              <div class="popular-services-img-container">
-                <img src="images/service1.jpg" alt="服务图片" />
-              </div>
-              <div class="popular-services-description">
-                <div class="psd-1green">
-                  <p>刘师傅</p>
-                  <span>中级</span>
-                </div>
+					<div class="popular-services-grid">
+						<h4>其他服务</h4>
+						<div class="popular-services-card">
+							<div class="popular-services-img-container">
+								<img src="images/service1.jpg" alt="服务图片" />
+							</div>
+							<div class="popular-services-description">
+								<div class="psd-1green">
+									<p>刘师傅</p>
+									<span>中级</span>
+								</div>
 
-                <p class="psd-p">3年经验</p>
-                <p class="psd-p">好评率 95%</p>
-              </div>
-              <div class="popular-services-price-container">
-                <div class="popular-services-price-container2">
-                  <div class="popular-services-price-container-logo">
-                    <img src="images/service5-1.svg" alt="" />
-                  </div>
-                  <div class="popular-services-price-container-description">
-                    <span class="pspcd-tittle">专业代遛狗</span>
-                    <span class="pspcd-effct">每日定时遛狗</span>
-                    <div class="popular-services-price">¥68.00 起</div>
-                  </div>
-                </div>
+								<p class="psd-p">3年经验</p>
+								<p class="psd-p">好评率 95%</p>
+							</div>
+							<div class="popular-services-price-container">
+								<div class="popular-services-price-container2">
+									<div class="popular-services-price-container-logo">
+										<img src="images/service5-1.svg" alt="" />
+									</div>
+									<div class="popular-services-price-container-description">
+										<span class="pspcd-tittle">专业代遛狗</span>
+										<span class="pspcd-effct">每日定时遛狗</span>
+										<div class="popular-services-price">¥68.00 起</div>
+									</div>
+								</div>
 
-                <div class="popular-services-price-container2">
-                  <div class="popular-services-price-container-logo">
-                    <img src="images/service5-2.svg" alt="" />
-                  </div>
-                  <div class="popular-services-price-container-description">
-                    <span class="pspcd-tittle">宠物接送服务</span>
-                    <span class="pspcd-effct">医院美容店接送</span>
-                    <div class="popular-services-price">¥38.00 起</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+								<div class="popular-services-price-container2">
+									<div class="popular-services-price-container-logo">
+										<img src="images/service5-2.svg" alt="" />
+									</div>
+									<div class="popular-services-price-container-description">
+										<span class="pspcd-tittle">宠物接送服务</span>
+										<span class="pspcd-effct">医院美容店接送</span>
+										<div class="popular-services-price">¥38.00 起</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- 合作伙伴与媒体报道 -->
-    <section class="partners-media">
-      <div class="partners-media-container">
-        <h2>合作伙伴与媒体报道</h2>
-        <div class="partners-logos">
-          <img src="images/friend1.jpg" alt="Partner Logo" />
-          <img src="images/friend2.jpg" alt="Partner Logo" />
-          <img src="images/friend3.jpg" alt="Partner Logo" />
-          <img src="images/friend4.jpg" alt="Partner Logo" />
-          <img src="images/friend5.jpg" alt="Partner Logo" />
-          <img src="images/friend6.jpg" alt="Partner Logo" />
-        </div>
-        <div class="media-cards">
-          <div class="media-card">
-            <img src="images/report1.jpg" alt="媒体图片" />
-            <h4>《科技日报》</h4>
-            <p>宠物优享打造宠物服务新业态，引领行业数字化转型</p>
-          </div>
-          <div class="media-card">
-            <img src="images/report2.jpg" alt="媒体图片" />
-            <h4>《创业邦》</h4>
-            <p>专访宠伴优享创世人：如何用互联网思维重构宠物服务</p>
-          </div>
-          <div class="media-card">
-            <img src="images/report3.jpg" alt="媒体图片" />
-            <h4>《电商报》</h4>
-            <p>宠伴优享商城GMV破亿，宠物消费升级趋势明显</p>
-          </div>
-          <div class="media-card">
-            <img src="images/report4.jpg" alt="媒体图片" />
-            <h4>《宠物健康》</h4>
-            <p>专业服务获认可，宠伴优享入选年度优质服务商榜单</p>
-          </div>
-        </div>
-      </div>
-    </section>
+		<!-- 合作伙伴与媒体报道 -->
+		<section class="partners-media">
+			<div class="partners-media-container">
+				<h2>合作伙伴与媒体报道</h2>
+				<div class="partners-logos">
+					<img src="images/friend1.jpg" alt="Partner Logo" />
+					<img src="images/friend2.jpg" alt="Partner Logo" />
+					<img src="images/friend3.jpg" alt="Partner Logo" />
+					<img src="images/friend4.jpg" alt="Partner Logo" />
+					<img src="images/friend5.jpg" alt="Partner Logo" />
+					<img src="images/friend6.jpg" alt="Partner Logo" />
+				</div>
+				<div class="media-cards">
+					<div class="media-card">
+						<img src="images/report1.jpg" alt="媒体图片" />
+						<h4>《科技日报》</h4>
+						<p>宠物优享打造宠物服务新业态，引领行业数字化转型</p>
+					</div>
+					<div class="media-card">
+						<img src="images/report2.jpg" alt="媒体图片" />
+						<h4>《创业邦》</h4>
+						<p>专访宠伴优享创世人：如何用互联网思维重构宠物服务</p>
+					</div>
+					<div class="media-card">
+						<img src="images/report3.jpg" alt="媒体图片" />
+						<h4>《电商报》</h4>
+						<p>宠伴优享商城GMV破亿，宠物消费升级趋势明显</p>
+					</div>
+					<div class="media-card">
+						<img src="images/report4.jpg" alt="媒体图片" />
+						<h4>《宠物健康》</h4>
+						<p>专业服务获认可，宠伴优享入选年度优质服务商榜单</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- 页脚 -->
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-cols">
-          <div class="footer-col" style="margin-right: 20px">
-            <h4 class="footer-theme">宠物优享</h4>
-            <p>连接宠物主人，串联可爱动物人的奇妙世界，让养宠生活更美好。</p>
-            <div class="social-icons">
-              <div class="social-icons-container">
-                <img src="images/wechat.svg" alt="" />
-              </div>
-              <div class="social-icons-container">
-                <img src="images/weibo.svg" alt="" />
-              </div>
-              <div class="social-icons-container">
-                <img src="images/dy.svg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="footer-col">
-            <h4>关于我们</h4>
-            <ul>
-              <li><a href="#">公司简介</a></li>
-              <li><a href="#">企业文化</a></li>
-              <li><a href="#">发展历程</a></li>
-              <li><a href="#">加入我们</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>用户服务</h4>
-            <ul>
-              <li><a href="#">帮助中心</a></li>
-              <li><a href="#">售后服务</a></li>
-              <li><a href="#">投诉建议</a></li>
-              <li><a href="#">服务协议</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>商务合作</h4>
-            <ul>
-              <li><a href="#">商家入驻</a></li>
-              <li><a href="#">广告投放</a></li>
-              <li><a href="#">品牌合作</a></li>
-              <li><a href="#">营销联盟</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>联系我们</h4>
-            <ul>
-              <li class="contact-us-li">
-                <img src="images/phone.svg" alt="" class="contact-us-img" />
-                <p>客服热线：400-123-4567</p>
-              </li>
-              <li class="contact-us-li">
-                <img src="images/email.svg" alt="" class="contact-us-img" />
-                <p>商务邮箱：business@chongqianyou.com</p>
-              </li>
-              <li class="contact-us-li">
-                <img src="images/address.svg" alt="" class="contact-us-img" />
-                <p>公司地址：北京市朝阳区幸福大街 88 号</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="copyright">
-          <p>
-            © 2023 宠伴优享 版权所有 | 京ICP备 12345678号-1 | 京公网安备
-            11010102031234号
-          </p>
-        </div>
-      </div>
-    </footer>
-  </body>
+		<!-- 页脚 -->
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-cols">
+					<div class="footer-col" style="margin-right: 20px">
+						<h4 class="footer-theme">宠物优享</h4>
+						<p>连接宠物主人，串联可爱动物人的奇妙世界，让养宠生活更美好。</p>
+						<div class="social-icons">
+							<div class="social-icons-container">
+								<img src="images/wechat.svg" alt="" />
+							</div>
+							<div class="social-icons-container">
+								<img src="images/weibo.svg" alt="" />
+							</div>
+							<div class="social-icons-container">
+								<img src="images/dy.svg" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="footer-col">
+						<h4>关于我们</h4>
+						<ul>
+							<li><a href="#">公司简介</a></li>
+							<li><a href="#">企业文化</a></li>
+							<li><a href="#">发展历程</a></li>
+							<li><a href="#">加入我们</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>用户服务</h4>
+						<ul>
+							<li><a href="#">帮助中心</a></li>
+							<li><a href="#">售后服务</a></li>
+							<li><a href="#">投诉建议</a></li>
+							<li><a href="#">服务协议</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>商务合作</h4>
+						<ul>
+							<li><a href="#">商家入驻</a></li>
+							<li><a href="#">广告投放</a></li>
+							<li><a href="#">品牌合作</a></li>
+							<li><a href="#">营销联盟</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>联系我们</h4>
+						<ul>
+							<li class="contact-us-li">
+								<img src="images/phone.svg" alt="" class="contact-us-img" />
+								<p>客服热线：400-123-4567</p>
+							</li>
+							<li class="contact-us-li">
+								<img src="images/email.svg" alt="" class="contact-us-img" />
+								<p>商务邮箱：business@chongqianyou.com</p>
+							</li>
+							<li class="contact-us-li">
+								<img src="images/address.svg" alt="" class="contact-us-img" />
+								<p>公司地址：北京市朝阳区幸福大街 88 号</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="copyright">
+					<p>© 2023 宠伴优享 版权所有 | 京ICP备 12345678号-1 | 京公网安备 11010102031234号</p>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>

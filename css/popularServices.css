@@ -1,190 +1,316 @@
 .popular-services {
-  width: 100%;
-  background: #ffffff;
+	width: 100%;
+	background: #ffffff;
 }
 .popular-services-container {
-  width: 80%;
-  margin: 25px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+	width: 80%;
+	margin: 25px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }
 .popular-services-containers-header {
-  margin: 25px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+	margin: 25px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
 }
 .popular-services-containers-header-view-more a {
-  text-decoration: none;
-  color: #ed734a;
+	text-decoration: none;
+	color: #ed734a;
 }
 .popular-services-flex {
-  width: 100%;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
+	width: 100%;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
 }
 
 .popular-services-grid {
-  flex: 1;
-  background: white;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  padding: 10px;
+	flex: 1;
+	background: white;
+	border: 1px solid #eee;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+	padding: 10px;
 }
 
 .popular-services-grid h4 {
-  text-align: center;
-  color: #333;
-  font-weight: bold;
-  margin-bottom: 10px;
+	text-align: center;
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
 
 .popular-services-card {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 5px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, auto);
+	gap: 5px;
 }
 
 /* 头像区域 */
 .popular-services-img-container {
-  width: 100px;
-  height: 100px;
-  border-radius: 15px;
-  overflow: hidden;
+	width: 100px;
+	height: 100px;
+	border-radius: 15px;
+	overflow: hidden;
 }
 .popular-services-img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .popular-services-description {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
 
-  gap: 10px;
+	gap: 10px;
 }
 .psd-1 p {
-  font-weight: 600;
-  margin-bottom: 2px;
+	font-weight: 600;
+	margin-bottom: 2px;
 }
 .psd-1blue span {
-  width: 30px;
-  height: 30px;
+	width: 30px;
+	height: 30px;
 
-  font-size: 12px;
-  position: relative;
-  color: #2568c9;
-  z-index: 2;
-  padding: 0 5px;
+	font-size: 12px;
+	position: relative;
+	color: #2568c9;
+	z-index: 2;
+	padding: 0 5px;
 }
 .psd-1blue span::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  background-color: #d0e3ff8f;
-  z-index: 1;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background-color: #d0e3ff8f;
+	z-index: 1;
 }
 .psd-1green span {
-  width: 30px;
-  height: 30px;
+	width: 30px;
+	height: 30px;
 
-  font-size: 12px;
-  position: relative;
-  color: #5fb37e;
-  z-index: 2;
-  padding: 0 5px;
+	font-size: 12px;
+	position: relative;
+	color: #5fb37e;
+	z-index: 2;
+	padding: 0 5px;
 }
 .psd-1green span::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  background-color: #beffd696;
-  z-index: 1;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background-color: #beffd696;
+	z-index: 1;
 }
 .psd-1purple span {
-  width: 30px;
-  height: 30px;
+	width: 30px;
+	height: 30px;
 
-  font-size: 12px;
-  position: relative;
-  color: #9970d0;
-  z-index: 2;
-  padding: 0 5px;
+	font-size: 12px;
+	position: relative;
+	color: #9970d0;
+	z-index: 2;
+	padding: 0 5px;
 }
 .psd-1purple span::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  background-color: #dec5ff8a;
-  z-index: 1;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background-color: #dec5ff8a;
+	z-index: 1;
 }
 .psd-p {
-  font-size: 14px;
-  color: #8d8c8c;
+	font-size: 14px;
+	color: #8d8c8c;
 }
 
 .popular-services-price-container {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  gap: 8px;
+	gap: 8px;
 }
 
 .popular-services-price-container2 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
 .popular-services-price-container-logo {
-  width: 16px;
-  height: 16px;
-  margin: 8px;
+	width: 16px;
+	height: 16px;
+	margin: 8px;
 }
 .popular-services-price-container-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 
 .popular-services-price-container-description {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
 }
 .pspcd-tittle {
-  font-weight: 600;
-  font-size: 12px;
+	font-weight: 600;
+	font-size: 12px;
 }
 .pspcd-effct {
-  font-size: 10px;
-  color: #666;
+	font-size: 10px;
+	color: #666;
 }
 .popular-services-price {
-  font-size: 12px;
-  font-weight: bold;
-  color: #e63946;
+	font-size: 12px;
+	font-weight: bold;
+	color: #e63946;
+}
+
+/* 平板尺寸适配 (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+	.popular-services-container {
+		width: 95%;
+		padding: 0 20px;
+	}
+	.popular-services-card {
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+	.popular-services-containers-header h2 {
+		font-size: 1.75rem;
+	}
+
+	.popular-services-flex {
+		gap: 12px;
+	}
+
+	.popular-services-grid {
+		padding: 12px;
+	}
+
+	.popular-services-grid h4 {
+		font-size: 1.1rem;
+	}
+
+	.popular-services-img-container {
+		width: 90px;
+		height: 90px;
+	}
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+	.popular-services-container {
+		width: 100%;
+		padding: 0 15px;
+		margin: 15px auto;
+	}
+
+	.popular-services-containers-header {
+		margin: 15px 0;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+
+	.popular-services-containers-header h2 {
+		font-size: 1.5rem;
+	}
+
+	.popular-services-flex {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.popular-services-grid {
+		width: 100%;
+		padding: 12px;
+	}
+
+	.popular-services-grid h4 {
+		font-size: 1rem;
+		margin-bottom: 12px;
+	}
+
+	.popular-services-card {
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+
+	.popular-services-img-container {
+		width: 80px;
+		height: 80px;
+	}
+
+	.popular-services-description {
+		gap: 8px;
+	}
+
+	.psd-p {
+		font-size: 12px;
+	}
+
+	.popular-services-price-container {
+		gap: 10px;
+	}
+
+	.popular-services-price-container-logo {
+		width: 14px;
+		height: 14px;
+		margin: 6px;
+	}
+
+	.pspcd-tittle {
+		font-size: 11px;
+	}
+
+	.pspcd-effct {
+		font-size: 9px;
+	}
+
+	.popular-services-price {
+		font-size: 11px;
+	}
+}
+
+@media (max-width: 480px) {
+	.popular-services-container {
+		padding: 0 10px;
+	}
+
+	.popular-services-containers-header h2 {
+		font-size: 1.25rem;
+	}
+
+	.popular-services-grid {
+		padding: 10px;
+	}
+
+	.popular-services-img-container {
+		width: 70px;
+		height: 70px;
+	}
 }
